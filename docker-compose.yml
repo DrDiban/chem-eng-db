@@ -8,7 +8,7 @@ services:
     ports:
       - "27017:27017"
     env_file:
-      - .env
+      - /etc/profile.d/chem-eng.sh
     volumes:
       - mongo_data:/data/db
 
